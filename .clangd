@@ -1,0 +1,22 @@
+CompileFlags:
+  Add:
+    - -I/usr/include/qt
+    - -I/usr/include/qt/QtCore
+    - -I/usr/include/qt/QtGui
+    - -I/usr/include/qt/QtWidgets
+    - -I/usr/include/qt/QtQsl
+    - -std=c++17
+    - -I/home/nikgub/Code/C++/UniMatrix/include
+
+CompileCommands: .
+
+ProjectRoot: .
+
+FallbackFlags:
+  Add:
+    - -DQT_CORE_LIB
+    - -DQT_GUI_LIB
+    - -DQT_WIDGETS_LIB
+    - -DQT_SQL_LIB
+
+CompilationDatabase: build/compile_commands.json
