@@ -7,7 +7,7 @@ using TokenizerFunction = char *(*)(const char *);
 
 struct ITokenizer
 {
-    virtual ~ITokenizer() = default;
+    virtual ~ITokenizer() noexcept = default;
 };
 
 } // namespace FragmentLM

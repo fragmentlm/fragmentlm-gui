@@ -7,11 +7,11 @@
 namespace FragmentLM
 {
 
-class AbstractMainWindow : public QWidget
+struct AbstractMainWindow : public QWidget
 {
     Q_OBJECT
   public:
-    virtual ~AbstractMainWindow() = default;
+    virtual ~AbstractMainWindow() noexcept = default;
 
     virtual void setModel(std::unique_ptr<MainWindowModel> model) noexcept = 0;
 
