@@ -31,6 +31,7 @@ Network immediately returns response JSON:
 until a non-zero `status` is received.
 - `status`: see [this section](##Operation status)
 
+
 ## DS final response
 And when the work is done the network send the following packet:
 ```json
