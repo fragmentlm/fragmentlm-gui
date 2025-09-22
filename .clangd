@@ -4,9 +4,9 @@ CompileFlags:
     - -I/usr/include/qt/QtCore
     - -I/usr/include/qt/QtGui
     - -I/usr/include/qt/QtWidgets
-    - -I/usr/include/qt/QtQsl
     - -std=c++17
-    - -I/home/nikgub/Code/C++/UniMatrix/include
+    - -I/home/nikgub/Code/C++/fragmentlm/gui/include
+    - -I/home/nikgub/Code/C++/fragmentlm/gui/src/
 
 CompileCommands: .
 
@@ -17,6 +17,5 @@ FallbackFlags:
     - -DQT_CORE_LIB
     - -DQT_GUI_LIB
     - -DQT_WIDGETS_LIB
-    - -DQT_SQL_LIB
 
 CompilationDatabase: build/compile_commands.json
