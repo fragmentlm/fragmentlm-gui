@@ -29,7 +29,8 @@ add_executable(${PROJECT_NAME} ${ENTRY_POINT} ${UIS} ${API_HEADERS} ${PROJECT_HE
 target_include_directories(${PROJECT_NAME} PRIVATE "include")
 target_include_directories(${PROJECT_NAME} PRIVATE "${Qt5Core_INCLUDE_DIRS}")
 target_include_directories(${PROJECT_NAME} PRIVATE "${Qt5Widgets_INCLUDE_DIRS}")
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Widgets)
+target_include_directories(${PROJECT_NAME} PRIVATE "${Qt5NNetwork_INCLUDE_DIRS}")
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Widgets Qt5::Network)
 
 if(WIN32)
     set_target_properties(${PROJECT_NAME} PROPERTIES
