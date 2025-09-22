@@ -29,7 +29,7 @@ Network immediately returns response JSON:
 ```
 - `requestID`: identifier of the operation assigned by DS. The operation should be considered alive
 until a non-zero `status` is received.
-- `status`: see [this section](##operation-status)
+- `status`: see [Operation status](##operation-status)
 
 
 ## DS final response
@@ -43,7 +43,7 @@ And when the work is done the network send the following packet:
 ```
 - `requestID`: identifier of the operation assigned by DS. The operation is dead once this
 reply is given.
-- `status`: see [[##Operation status]]
+- `status`: see [Operation status](##operation-status)
 - `result`: processed tokenized fragment of the text, if present
 
 
